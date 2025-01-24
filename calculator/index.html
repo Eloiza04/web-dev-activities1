@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="js/numbers.js"></script>
+    <script src="js/operations.js">s</script>
+    <title>Simple Calculator</title>
+<style>
+body {
+  background-color: yellow;
+  font-family: sans-serif;
+}
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.display {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 5px;
+}
+/*Added this to make display2 completely hidden*/
+#display2 {
+  display: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+</style>
+
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form name="calculator">
+        <input type="text" id="display" value="0" readonly>
+        <input type="text" id="display2" readonly>
+        <input type="text" id="operator" readonly>
+        <br><br>
+        <button type="button" onclick="seven()">7</button>
+        <button type="button" onclick="eight()">8</button>
+        <button type="button" onclick="nine()">9</button>
+        <button type="button" onclick="addition()">+</button>
+        <br><br>
+        <button type="button" onclick="four()">4</button>
+        <button type="button" onclick="five()">5</button>
+        <button type="button" onclick="six()">6</button>
+        <button type="button" onclick="subtraction()">-</button>
+        <br><br>
+        <button type="button" onclick="one()">1</button>
+        <button type="button" onclick="two()">2</button>
+        <button type="button" onclick="three()">3</button>
+        <button type="button" onclick="multiplication()">*</button>
+        <br><br>
+        <button type="button" onclick="zero()">0</button>
+        <button type="button" onclick="dot()">.</button>
+        <button type="button" onclick="equals()">=</button>
+        <button type="button" onclick="division()">/</button>
+    </form>
+</body>
+</html>
