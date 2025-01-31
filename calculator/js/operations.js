@@ -104,18 +104,15 @@ function equals () {
     }
     else if(operator === "/") {
         if(Number(num2) !== 0){
-            answer = Number(num)/Number(num)/Number(num2);
+            answer = Number(num) / Number(num2);
         }else{
-            answer = "Error:Division by zero";
-
+                    answer = "Error:Division by zero";
         }
     }
 
     document.getElementById('display2').value = answer;
-    document.getElementById('display').value = "";
+    document.getElementById('display').value = "0";
     document.getElementById('operator').value = "";
-
-} 
 
 function dot () {
     document.getElementById('operator').value = ".";
